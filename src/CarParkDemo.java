@@ -60,6 +60,9 @@ public class CarParkDemo{
                 "Автомобили из автопарка (с сортировкой по возрастанию цены):");
         gr2.aboveAvgCost().sort(new CompCostAsc()).putCarPark();
         System.out.println(
+                "Автомобили из автопарка (с сортировкой по возрастанию цены):");
+        gr2.aboveAvgCost().sort(new CompCostAsc()).putCarPark();
+        System.out.println(
                 "Автомобили из автопарка (с сортировкой по убыванию цены):");
         gr2.betweenCost(400000,4000000).sort(new CompCostDesc()).putCarPark();
 
