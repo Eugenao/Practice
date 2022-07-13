@@ -96,9 +96,13 @@ public class CarParkDemo{
         gr2.delBelowAvgCost().putCarPark();
 
 
-        gr1.filter().putCarPark();
+        gr1.filter1().putCarPark();
 
-        gr2.filter().putCarPark();
+        gr2.filter1().putCarPark();
+
+        gr1.filter2().putCarPark();
+
+        gr2.filter2().putCarPark();
 
         int u= 12547;
         Car U1 =gr1.getCar(u);

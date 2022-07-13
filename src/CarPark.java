@@ -117,13 +117,21 @@ public class CarPark  {
         }
         return park;
     }
-    public CarPark  filter(){
+    public CarPark  filter1(){
         CarPark park = new CarPark  (String.format("Марки начинающихся с Au:\n%s",name ));
 
         for (Car car:cars)
             if (car.getName().startsWith("Au"))park.addCar(car);
         return park;
     }
+    public CarPark  filter2(){
+        CarPark park = new CarPark  (String.format("Автомобили с нечетным id:\n%s",name ));
+
+        for (Car car:cars)
+            if ((int)car.getId() % 2 == 1) park.addCar(car);
+        return park;
+    }
+
     public CarPark  delBelowAvgCost(){
 
         double avg=avgCost();
